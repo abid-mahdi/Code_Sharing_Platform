@@ -1,4 +1,4 @@
-package platform;
+package platform.utils;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

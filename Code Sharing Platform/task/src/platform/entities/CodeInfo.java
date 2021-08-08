@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
-import platform.Utils;
+import platform.utils.Utils;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
