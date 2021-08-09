@@ -7,7 +7,7 @@
     </head>
     <body>
         <div>
-            <span id="load_date" th:text="${code.date}"></span>
+            <span id="load_date" th:text="${code.getDate()}"></span>
             <p>
                 <span th:if="${code.isViewRestricted() == true}">
                     <span id="views_restriction" th:text="${code.getViewsLeft()}"></span> more views allowed
@@ -18,7 +18,7 @@
                     The code will be available for <span  id="time_restriction" th:text="${code.getTimeLeft()}"></span> seconds
                 </p>
             </span>
-            <pre id="code_snippet"><code th:text="${code.code}"></code></pre>
+            <pre id="code_snippet"><code th:text="${code.getCode()}"></code></pre>
         </div>
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>

@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class CodeService {
 
-    CodeRepository codeRepo;
+    private final CodeRepository codeRepo;
 
     @Autowired
     public CodeService(CodeRepository codeRepo) {
